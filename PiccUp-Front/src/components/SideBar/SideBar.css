@@ -1,0 +1,399 @@
+.SideBar {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 100vh;
+  width: 25%;
+  min-width: 325px;
+  overflow: hidden;
+  transition-duration: 1000ms;
+  border-right: 1px solid #e5e9ec;
+}
+
+.SideBar .heading {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+  min-height: 73px;
+  box-shadow: 0 1px 8px 0 rgba(0, 17, 25, 0.27);
+  background: linear-gradient(
+    to right,
+    rgba(255, 69, 23, 1) 0%,
+    rgba(79, 56, 255, 1) 100%
+  );
+  color: white;
+}
+
+.SideBar .body {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.SideBar .SideBar-content {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex: 1;
+}
+
+.SideBar .messaging-menu {
+  transition-duration: 0.25s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.SideBar .matches-menu {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.SideBar .TranslateX100 {
+  transform: translateX(100%);
+}
+
+.SideBar .TranslateX-100 {
+  transform: translateX(-100%);
+}
+
+.SideBar .body .matches-message-header {
+  padding: 12px 24px;
+}
+
+.SideBar .matches-message-header .mmh-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.SideBar .mmh-links .mmh-link {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.SideBar .mmh-link-underline {
+  box-sizing: content-box;
+  margin: 0;
+  height: 1px;
+  border-color: rgba(255, 69, 23, 1);
+  background-color: rgba(255, 69, 23, 1);
+  transition-duration: 0.25s;
+}
+
+.SideBar .mmh-link-messages {
+  margin-left: 16px;
+}
+
+.SideBar .setting-link-back {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  left: 16px;
+  width: 24px;
+  height: 23px;
+  transition-duration: 0.25s;
+}
+
+.SideBar .setting-link {
+  cursor: pointer;
+}
+
+.SideBar .settings-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 0.25s ease-in;
+  background-color: #f5f7fa;
+}
+
+.SideBar .settings-menu .settings-item {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 100%;
+  min-height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+.SideBar .settings-menu .settings-item .settings-item-contents {
+  padding: 0 17px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.SideBar .settings-item-contents label {
+  height: 100%;
+}
+
+.SideBar .settings-item-contents .logout {
+  height: 100%;
+  cursor: inherit;
+  border: 0;
+  background-color: inherit;
+  font-size: 1.2em;
+}
+
+.SideBar .search {
+  background: #f5f7fa;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border-width: 1px 0; */
+  /* border-style: solid; */
+  /* border-color: #484d79; */
+  padding-left: 15px;
+  padding-right: 20px;
+  height: 10vh;
+  max-height: 65px;
+}
+/* 
+  .SideBar .search .search-icon {
+      margin-right: 15px;
+      cursor: pointer
+  }
+  */
+
+.SideBar .search input {
+  height: 100%;
+  font-size: 1em;
+  background: inherit;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: none;
+  color: rgb(65, 65, 65);
+}
+
+.SideBar .search input:focus {
+  outline: none;
+}
+
+.SideBar .search input::placeholder {
+  color: rgb(97, 97, 97);
+  opacity: 0.6;
+}
+
+.SideBar .search .plus {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin: 0px 10px;
+  width: 13px;
+  height: 13px;
+}
+
+.SideBar .search .plus::after,
+.SideBar .search .plus::before {
+  content: "";
+  position: absolute;
+  background: rgb(97, 97, 97);
+}
+
+.SideBar .search .plus::after {
+  width: 16px;
+  height: 2px;
+  top: 5px;
+}
+
+.SideBar .search .plus::before {
+  width: 2px;
+  height: 16px;
+  top: -2px;
+  left: 7px;
+}
+
+/* USERS */
+.SideBar .users {
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.SideBar .users::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #cac8ee;
+}
+
+.SideBar .users::-webkit-scrollbar {
+  width: 5px;
+  background-color: green;
+}
+
+.SideBar .users::-webkit-scrollbar-thumb {
+  background-color: #484d79;
+}
+
+.SideBar .users .user {
+  align-items: center;
+  display: flex;
+  height: 66px;
+  justify-content: flex-start;
+  padding: 18px 16px;
+  transition-duration: 250ms;
+}
+
+.SideBar .users .user:hover {
+  background: #b1c2ff;
+  transform: translate3d(-2px, -2px, 0px);
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SideBar .users .user.active {
+  background: #89a1fc;
+  transform: translate3d(-4px, -4px, 0px);
+  box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SideBar .users .user:hover:not(.active) {
+  cursor: pointer;
+}
+
+.SideBar .users .user .user-info {
+  display: inline-block;
+  margin-left: 15px;
+  flex-grow: 1;
+  width: 100%;
+  overflow: auto;
+}
+
+.SideBar .users .user .user-info .last-message {
+  font-size: 12px;
+  opacity: 0.56;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.SideBar .users .user .new-message {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SideBar .gamesearch {
+  background: #f5f7fa;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border-width: 1px 0; */
+  /* border-style: solid; */
+  /* border-color: #484d79; */
+  padding-left: 15px;
+  padding-right: 20px;
+  height: 10vh;
+  max-height: 65px;
+}
+
+.SideBar .games {
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.SideBar .games::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #cac8ee;
+}
+
+.SideBar .games::-webkit-scrollbar {
+  width: 5px;
+  background-color: green;
+}
+
+.SideBar .games::-webkit-scrollbar-thumb {
+  background-color: #484d79;
+}
+
+.SideBar .games .game {
+  align-items: center;
+  display: flex;
+  height: 66px;
+  justify-content: center;
+  padding: 18px 16px;
+  /* background-color: mistyrose;  */
+  transition-duration: 250ms;
+}
+
+.SideBar .games .game:hover {
+  background: #b1c2ff;
+  transform: translate3d(-2px, -2px, 0px);
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SideBar .games .game.active {
+  background: #89a1fc;
+  transform: translate3d(-4px, -4px, 0px);
+  box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SideBar .games .game:hover:not(.active) {
+  cursor: pointer;
+}
+
+.SideBar .game-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 10px;
+  padding: 5px 5px;
+}
+.SideBar .game-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.SideBar .game-game {
+  display: flex;
+  width: 30%;
+}
+
+.SideBar .game-team {
+  width: 10%;
+}
+
+.SideBar .game-date {
+  flex: 1;
+}
+
+.SideBar .games .game:hover:not(.active) {
+  cursor: pointer;
+}

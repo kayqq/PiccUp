@@ -1,0 +1,128 @@
+.Modal-Login {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 36px 44px;
+}
+
+.Modal-Login .Login {
+  width: 100%;
+}
+
+.Modal-Login .Login .login-input {
+  height: 50px;
+  width: 250px;
+  min-width: 250px;
+  font-size: 1.4rem;
+  padding: 0px 30px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  border: solid #e0e4e9 2px;
+  box-sizing: content-box;
+}
+
+.Modal-Login .login-input::placeholder {
+  text-align: center;
+}
+
+.Modal-Login .login-input:hover {
+  color: #424242;
+  border: solid rgb(94, 94, 94) 2px;
+}
+
+.Modal-Login .login-input:focus {
+  text-decoration: none;
+  border: solid rgb(94, 94, 94) 2px;
+}
+
+.Modal-SignUp {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.Modal-SignUp .signup-select {
+  padding: 0px 0px !important;
+  width: 250px;
+}
+
+.Modal-SignUp .signup-agreement {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.Modal-SignUp .signup-city {
+  padding: 0px 30px;
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.Modal-SignUp .signup-state {
+  padding: 0px 30px;
+  height: 100%;
+  width: 50%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.Modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #424242;
+}
+
+.Modal-content .Heading {
+  align-self: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.Modal-content .Agreement-Notice {
+  text-align: center;
+  align-self: center;
+  margin: 30px 0px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.Modal-content .User-Inputs {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+.input_error {
+  border: solid rgb(255, 53, 53) 1px !important;
+}
+
+.input_error::placeholder {
+  color: rgb(255, 53, 53) !important;
+}
+
+.credentials_success {
+  /* position: absolute; */
+  margin: 10px 0px;
+  color: rgb(5, 156, 0) !important;
+}
+
+.credentials_error {
+  /* position: absolute; */
+  margin: 10px 0px;
+  color: rgb(255, 53, 53) !important;
+}
+
+.location-dd {
+  width: 50%;
+}
+
+.Login-Trouble {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Login-Trouble:hover {
+  color: #89a1fc;
+}

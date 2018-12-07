@@ -1,0 +1,44 @@
+.ChatProfile {
+  box-sizing: border-box;
+  border-left: 1px solid #e5e9ec;
+  background-color: white;
+  width: 300px;
+  min-width: 300px;
+  flex-flow: column;
+  display: flex;
+  overflow: hidden;
+  transition-duration: 1000ms;
+}
+.ChatProfile .chat-profile-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+
+.ChatProfile .profile-picture {
+  height: 35%;
+}
+
+.ChatProfile .profile-info {
+  height: fit-content;
+}
+
+.ChatProfile .profile-matches {
+  flex: 1;
+}
+.ChatProfile .chat-picture-container {
+  align-self: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ChatProfile .profile-match-label {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
