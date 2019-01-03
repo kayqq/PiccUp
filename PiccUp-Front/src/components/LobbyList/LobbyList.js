@@ -95,7 +95,7 @@ class LobbyList extends React.Component {
                     </button>
                     <button
                         className="btn"
-                        disabled={!this.state.selectedRowIndex}
+                        disabled={!this.props.selectedGameId}
                         onClick={() => {
                             this.handleViewGame(this.props.selectedGameId);
                         }}

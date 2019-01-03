@@ -21,6 +21,7 @@ export const lobbylistReducer = (state = intitialState, action = {}) => {
             return {
                 ...state,
                 allActiveGames: action.payload,
+                selectedGameId: '',
                 isLoading: false
             };
         case GAME_SELECT:
