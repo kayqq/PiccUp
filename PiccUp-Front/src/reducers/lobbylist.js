@@ -16,12 +16,11 @@ const intitialState = {
 export const lobbylistReducer = (state = intitialState, action = {}) => {
     switch (action.type) {
         case ALL_ACTIVE_GAMES_REQUESTED:
-            return { ...state, isLoading: true };
+            return { ...state, selectedGameId: '', isLoading: true };
         case ALL_ACTIVE_GAMES_UPDATED:
             return {
                 ...state,
                 allActiveGames: action.payload,
-                selectedGameId: '',
                 isLoading: false
             };
         case GAME_SELECT:
