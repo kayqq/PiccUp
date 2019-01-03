@@ -5,6 +5,7 @@ const http = require('http');
 const fetch = require('node-fetch');
 const _ = require('lodash');
 const mongoose = require('mongoose');
+const path = require('path');
 
 // Express
 const app = express();
@@ -34,6 +35,7 @@ const port = 4001;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Socket Events
 io.on('connection', SocketManager);
