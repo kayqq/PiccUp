@@ -16,7 +16,7 @@ const handleSignup = async (req, res) => {
         console.log('Successfully saved new user.');
         return res.status(200).json(null);
     } catch (error) {
-        console.log('Error saving new user.');
+        console.log('Error saving new user. Error: ', error);
         if (error.name === 'MongoError' && error.code === 11000) {
             console.log('Duplicate name');
         }
