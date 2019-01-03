@@ -34,6 +34,11 @@ const port = 4001;
 
 // Middleware
 app.use(cors());
+app.use(
+    bodyParser.urlencoded({
+        extended: true
+    })
+);
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../PiccUp-Front//build')));
 
