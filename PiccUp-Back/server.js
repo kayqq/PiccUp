@@ -5,7 +5,6 @@ const http = require('http');
 const fetch = require('node-fetch');
 const _ = require('lodash');
 const mongoose = require('mongoose');
-const path = require('path');
 
 // Express
 const app = express();
@@ -40,7 +39,6 @@ app.use(
     })
 );
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../PiccUp-Front//build')));
 
 // Socket Events
 io.on('connection', SocketManager);

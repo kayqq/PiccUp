@@ -5,7 +5,8 @@ import {
     TYPING_UPDATE,
     CHAT_SELECT,
     CHAT_PROFILE_LOAD,
-    CHAT_USERS_ONLINE_UPDATE
+    CHAT_USERS_ONLINE_UPDATE,
+    LOGOUT
 } from '../actions/constants';
 
 const intitialState = {
@@ -59,6 +60,13 @@ export const chatReducer = (state = intitialState, action = {}) => {
             return { ...state, activeChatProfile: action.payload };
         case CHAT_USERS_ONLINE_UPDATE:
             return { ...state, usersOnline: action.payload };
+        case LOGOUT:
+            return {
+                ...state,
+                chats: [],
+                selectedChatId: '',
+                activeChatProfile: {}
+            };
         default:
             return state;
     }

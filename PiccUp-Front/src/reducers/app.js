@@ -1,4 +1,4 @@
-import { ROUTE_CHANGE } from '../actions/constants';
+import { ROUTE_CHANGE, LOGOUT } from '../actions/constants';
 
 const intitialState = {
     prevRoute: '',
@@ -12,6 +12,8 @@ export const appReducer = (state = intitialState, action = {}) => {
                 return { ...state, prevRoute: '', route: state.prevRoute };
             }
             return { ...state, prevRoute: state.route, route: action.payload };
+        case LOGOUT:
+            return { ...state, prevRoute: '', route: 'lobbylist' };
         default:
             return state;
     }

@@ -2,7 +2,8 @@ import {
     ALL_ACTIVE_GAMES_REQUESTED,
     ALL_ACTIVE_GAMES_UPDATED,
     GAME_SELECT,
-    FETCH_YELP_BUSINESSES_SUCCESS
+    FETCH_YELP_BUSINESSES_SUCCESS,
+    LOGOUT
 } from '../actions/constants';
 
 const intitialState = {
@@ -26,6 +27,8 @@ export const lobbylistReducer = (state = intitialState, action = {}) => {
             return { ...state, selectedGameId: action.payload };
         case FETCH_YELP_BUSINESSES_SUCCESS:
             return { ...state, yelpSearchResults: action.payload };
+        case LOGOUT:
+            return { ...state, selectedGameId: '', yelpSearchResults: [] };
         default:
             return state;
     }

@@ -138,7 +138,7 @@ export const updateTypingInGame = (isTyping, username) => {
 export const fetchYelpBusinesses = (searchTerm, location) => {
     return dispatch => {
         dispatch({ type: FETCH_YELP_BUSINESSES_REQUESTED });
-        fetch('/yelpbusinesssearch', {
+        fetch('http://13.58.138.202/yelpbusinesssearch', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -168,7 +168,7 @@ export const fetchYelpBusinesses = (searchTerm, location) => {
 export const login = (username, password) => {
     return dispatch => {
         dispatch({ type: LOGIN_REQUESTED });
-        return fetch('/login', {
+        return fetch('http://13.58.138.202/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password })
@@ -195,7 +195,7 @@ export const login = (username, password) => {
 export const tokenLogin = token => {
     return dispatch => {
         dispatch({ type: TOKEN_LOGIN_REQUESTED });
-        return fetch('/tokenlogin', {
+        return fetch('http://13.58.138.202/tokenlogin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -232,7 +232,7 @@ export const signup = (
 ) => {
     return dispatch => {
         dispatch({ type: SIGNUP_REQUESTED });
-        return fetch('/signup', {
+        return fetch('http://13.58.138.202/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
