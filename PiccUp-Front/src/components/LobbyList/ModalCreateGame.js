@@ -217,9 +217,6 @@ class ModalCreateGame extends Component {
                             >
                                 <div className="cg-input-content">
                                     <DatePicker
-                                        onSelect={() =>
-                                            console.log(this.state.startDate)
-                                        }
                                         required
                                         className="cg-input"
                                         selected={this.state.startDate}

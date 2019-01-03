@@ -35,7 +35,6 @@ class SideBar extends React.Component {
     }
 
     componentDidMount() {
-        console.log('mounting');
         this.setState({ gamesLinkWidth: this.gamesLink.current.offsetWidth });
         this.setState({ chatLinkWidth: this.chatLink.current.offsetWidth });
     }
@@ -87,6 +86,7 @@ class SideBar extends React.Component {
     logout = () => {
         const { socket } = this.props;
         socket.emit(LOGOUT);
+        socket.disconnect();
         this.props.logout();
     };
 

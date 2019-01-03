@@ -28,7 +28,7 @@ export const lobbylistReducer = (state = intitialState, action = {}) => {
         case FETCH_YELP_BUSINESSES_SUCCESS:
             return { ...state, yelpSearchResults: action.payload };
         case LOGOUT:
-            return { ...state, selectedGameId: '', yelpSearchResults: [] };
+            return { ...intitialState };
         default:
             return state;
     }

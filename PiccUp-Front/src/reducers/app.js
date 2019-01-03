@@ -13,7 +13,7 @@ export const appReducer = (state = intitialState, action = {}) => {
             }
             return { ...state, prevRoute: state.route, route: action.payload };
         case LOGOUT:
-            return { ...state, prevRoute: '', route: 'lobbylist' };
+            return { ...intitialState };
         default:
             return state;
     }

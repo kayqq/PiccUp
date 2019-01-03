@@ -15,7 +15,7 @@ export const userReducer = (state = intitialState, action = {}) => {
                 isAuthenticated: true
             };
         case LOGOUT:
-            return { ...state, user: {}, isAuthenticated: false };
+            return { ...intitialState };
         case USER_HISTORY_LOAD:
             return { ...state, gameHistory: action.payload };
         default:

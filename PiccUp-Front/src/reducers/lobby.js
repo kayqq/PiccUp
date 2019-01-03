@@ -1,7 +1,8 @@
 import {
     GAME_MESSAGES_LOAD,
     GAME_MESSAGE_ADD,
-    GAME_TYPING_UPDATE
+    GAME_TYPING_UPDATE,
+    LOGOUT
 } from '../actions/constants';
 
 const intitialState = {
@@ -24,6 +25,8 @@ export const lobbyReducer = (state = intitialState, action = {}) => {
                 newTypingUsers = state.typingUsers.filter(u => u !== username);
             }
             return { ...state, typingUsers: newTypingUsers };
+        case LOGOUT:
+            return { ...intitialState };
         default:
             return state;
     }

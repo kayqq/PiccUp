@@ -61,12 +61,7 @@ export const chatReducer = (state = intitialState, action = {}) => {
         case CHAT_USERS_ONLINE_UPDATE:
             return { ...state, usersOnline: action.payload };
         case LOGOUT:
-            return {
-                ...state,
-                chats: [],
-                selectedChatId: '',
-                activeChatProfile: {}
-            };
+            return { ...intitialState };
         default:
             return state;
     }

@@ -110,7 +110,6 @@ class PlayLobby extends React.Component {
         // Event listeners
         socket.on(messageEvent, newMessage => {
             this.props.addMessageToChat(chat.id, newMessage);
-            console.log(socket);
         });
         socket.on(loadEvent, prevMessages => {
             this.props.loadMessagesToChat(chat.id, prevMessages);
