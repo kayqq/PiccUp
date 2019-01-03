@@ -45,7 +45,7 @@ import {
     updateUsersOnline
 } from '../actions';
 
-const socketUrl = 'http://localhost:4001';
+const socketUrl = '13.58.138.202';
 
 class PlayLobby extends React.Component {
     constructor(props) {
