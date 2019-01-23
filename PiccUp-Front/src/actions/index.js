@@ -27,6 +27,8 @@ import {
     CHAT_USERS_ONLINE_UPDATE
 } from './constants';
 
+import { API_URL } from '../api-config';
+
 /*  Game actions
 *   
 */
@@ -138,7 +140,7 @@ export const updateTypingInGame = (isTyping, username) => {
 export const fetchYelpBusinesses = (searchTerm, location) => {
     return dispatch => {
         dispatch({ type: FETCH_YELP_BUSINESSES_REQUESTED });
-        fetch('http://13.58.138.202/yelpbusinesssearch', {
+        fetch(`${API_URL}/yelpbusinesssearch`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -168,7 +170,7 @@ export const fetchYelpBusinesses = (searchTerm, location) => {
 export const login = (username, password) => {
     return dispatch => {
         dispatch({ type: LOGIN_REQUESTED });
-        return fetch('http://13.58.138.202/login', {
+        return fetch(`${API_URL}/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password })
@@ -195,7 +197,7 @@ export const login = (username, password) => {
 export const tokenLogin = token => {
     return dispatch => {
         dispatch({ type: TOKEN_LOGIN_REQUESTED });
-        return fetch('http://13.58.138.202/tokenlogin', {
+        return fetch(`${API_URL}/tokenlogin`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -232,7 +234,7 @@ export const signup = (
 ) => {
     return dispatch => {
         dispatch({ type: SIGNUP_REQUESTED });
-        return fetch('http://13.58.138.202/signup', {
+        return fetch(`${API_URL}/signup`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

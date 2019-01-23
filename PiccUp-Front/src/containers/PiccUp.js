@@ -45,13 +45,13 @@ import {
     updateUsersOnline
 } from '../actions';
 
-const socketUrl = '13.58.138.202';
+import { API_URL } from '../api-config';
 
 class PlayLobby extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            socket: socketIOClient(socketUrl)
+            socket: socketIOClient(API_URL)
         };
     }
 
