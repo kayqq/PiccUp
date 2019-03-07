@@ -1,12 +1,13 @@
 # ignore a single file
 database.js
 
-# ignore an entire directory
-/node_modules
-node_modules/
 
+# ignore an entire directory
+node_modules/
+.vscode/
 
 # ignore a file type
+.env
 .eslintrc
 .eslintrc.json
 
