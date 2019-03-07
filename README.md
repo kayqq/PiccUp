@@ -18,7 +18,7 @@ Back End: Express.js, MongoDB, [socket.io](https://github.com/socketio/socket.io
 
 ## Getting started
 
-**[Install](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) MongoDB if you haven't already**
+### [Install](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) MongoDB if you haven't already
 
 ```
 brew update
@@ -57,4 +57,5 @@ npm start
 ```
 
 server is hosted on `http://localhost:4001/` to see your app.
-Then open `http://localhost:4001/` to see your app.
+
+Then open `http://localhost:3000/` to see your app.
