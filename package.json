@@ -1,0 +1,29 @@
+{
+    "name": "piccup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "preinstall": "cd b/c && npm install",
+        "start": "cd PiccUp-Front/PiccUp-Back && npm install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kayqq/PiccUp.git"
+    },
+    "keywords": [
+        "React",
+        "Redux",
+        "Express.js",
+        "Node.js",
+        "Socket.io",
+        "MongoDB"
+    ],
+    "author": "Kenny Quan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kayqq/PiccUp/issues"
+    },
+    "homepage": "https://github.com/kayqq/PiccUp#readme"
+}

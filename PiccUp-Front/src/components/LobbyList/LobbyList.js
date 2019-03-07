@@ -69,14 +69,12 @@ class LobbyList extends React.Component {
     render() {
         return (
             <div className="display">
-                {/* <div className="lobby-item"> */}
                 <div className="helper-labels">
-                    <div className="btn-label" onClick={() => this.loadLobby()}>
+                    <div className="btn-label" onClick={this.loadLobby}>
                         <span>Refresh </span>
                         <img src={refreshIcon} alt="" />
                     </div>
                 </div>
-                {/* </div> */}
                 <ReactTable
                     data={this.props.allActiveGames}
                     columns={Columns}
@@ -90,7 +88,7 @@ class LobbyList extends React.Component {
                     className="LobbyList"
                 />
                 <div className="helper-buttons">
-                    <button className="btn" onClick={() => this.openModal()}>
+                    <button className="btn" onClick={this.openModal}>
                         Create Game
                     </button>
                     <button

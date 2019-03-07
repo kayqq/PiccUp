@@ -76,7 +76,7 @@ class Dropdown extends Component {
             <div className={`dd-wrapper ${this.props.className}`}>
                 <div
                     className={`dd-header ${this.props.headerClassName}`}
-                    onClick={() => this.toggleList()}
+                    onClick={this.toggleList}
                 >
                     <div className="dd-header-title">
                         {selected ? selected : placeholder}
@@ -104,11 +104,6 @@ class Dropdown extends Component {
                             }}
                         />
                     )}
-                    {/* {listOpen ? (
-                        <FontAwesome name="angle-up" size="2x" />
-                    ) : (
-                        <FontAwesome name="angle-down" size="2x" />
-                    )} */}
                 </div>
                 {listOpen && (
                     <ul className={`dd-list ${this.props.listClassName}`}>
