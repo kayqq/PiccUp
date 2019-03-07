@@ -1,6 +1,6 @@
 # PiccUp
 
-An app that helps people communicate with locals and plan pick-up baskbetball games. Utilizes Yelp APi and Google API.
+An app that helps people communicate with locals and plan pick-up baskbetball games. Utilizes [Yelp Fusion APi](https://www.yelp.com/fusion) and [Google Maps API](https://cloud.google.com/maps-platform/).
 
 <br>
 
@@ -14,11 +14,9 @@ Back End: Express.js, MongoDB, [socket.io](https://github.com/socketio/socket.io
 
 **Tools:** npm
 
-<!-- +++++++++++++++++++++++++++++++++++++ -->
-
 ## Getting started
 
-### [Install](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) MongoDB if you haven't already
+**[Install MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) if you haven't already**
 
 ```
 brew update
@@ -56,6 +54,6 @@ npm install
 npm start
 ```
 
-server is hosted on `http://localhost:4001/` to see your app.
+The backend server will be hosted on `http://localhost:4001/`
 
-Then open `http://localhost:3000/` to see your app.
+Open up `http://localhost:3000/` to see the app.
