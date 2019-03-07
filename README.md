@@ -8,11 +8,15 @@ An app that helps people communicate with locals and plan pick-up baskbetball ga
 
 **Libraries:**
 
-Front End: React, Redux, [socket.io-client](https://github.com/socketio/socket.io-client), [lodash](https://github.com/lodash/lodash)
+Front End: React, Redux, [socket.io-client](https://github.com/socketio/socket.io-client), [lodash](https://github.com/lodash/lodash)  
 Back End: Express.js, MongoDB, [socket.io](https://github.com/socketio/socket.io)
 [mongoose](https://github.com/Automattic/mongoose), [bcrypt](https://www.npmjs.com/package/bcrypt-nodejs)
 
+<br>
+
 **Tools:** npm
+
+<br>
 
 ## Getting started
 
