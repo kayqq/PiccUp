@@ -2,7 +2,6 @@
 
 
 # ignore an entire directory
-node_modules/
 .vscode/
 build/
 
@@ -13,3 +12,5 @@ build/
 
 # add an exception (using !) to the preceding rule to track a specific file
 !package.json
+
+node_modules/

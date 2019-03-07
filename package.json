@@ -6,6 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "preinstall": "cd b/c && npm install",
+        "postinstall": "(cd PiccUp-Back && npm install); (cd PiccUp-Front && npm install)",
         "start": "cd PiccUp-Front/PiccUp-Back && npm install"
     },
     "repository": {

@@ -3,6 +3,8 @@ database.js
 
 # ignore an entire directory
 /node_modules
+node_modules/
+
 
 # ignore a file type
 .eslintrc
