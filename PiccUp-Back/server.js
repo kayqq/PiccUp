@@ -16,7 +16,7 @@ var io = (module.exports.io = require('socket.io')(server));
 // Connect to MongoDB
 mongoose.Promise = global.Promise;
 mongoose.connect(
-    'mongodb://localhost/PiccUp',
+    'mongodb://localhost/random',
     err => {
         if (err) throw err;
         console.log('Successfully connected');
