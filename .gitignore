@@ -2,7 +2,7 @@
 
 
 # ignore an entire directory
-.vscode/
+/.vscode
 build/
 
 # ignore a file type
