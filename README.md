@@ -20,27 +20,13 @@ Back End: Express.js, MongoDB, [socket.io](https://github.com/socketio/socket.io
 
 ## Getting started
 
-**[Install MongoDB](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) if you haven't already**
+**Note: You need MongoDB set up and running to run the code locally. [Installation instructions](https://docs.mongodb.com/manual/installation/)**
+
+Once you've installed MongoDB, start up the MongoDB server in a new terminal with the following commands:
 
 ```
-brew update
-brew install mongodb
+mongod
 ```
-
-Create the “db” directory
-
-```
-mkdir -p /data/db
-```
-
-Make sure that the /data/db directory has the right permissions by running
-
-```
-> sudo chown -R `id -un` /data/db
-> # Enter your password
-```
-
-Run the Mongo daemon, in one of your terminal windows run mongod. This should start the Mongo server.
 
 To stop the Mongo daemon hit ctrl-c
 
