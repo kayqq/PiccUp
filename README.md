@@ -4,7 +4,7 @@ An app that helps people communicate with locals and plan pick-up baskbetball ga
 
 <br>
 
-**[Live Demo](http://piccup-client.s3-website-us-west-1.amazonaws.com)**
+**[Live Demo](http://piccup.kennyquan.com/)**
 
 **Libraries:**
 
